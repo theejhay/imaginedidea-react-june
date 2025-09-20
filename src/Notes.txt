@@ -1,0 +1,13 @@
+React Hooks
+============
+- useState 
+- useEffect -  lets you perform side effects in function component
+    side effects include:
+    - Fetching Data
+    - Directly Manipulate the DOM
+    - Set up timers and Intervals
+
+useEffect (() => {
+    // Code to run on mount or update 
+
+}, [])

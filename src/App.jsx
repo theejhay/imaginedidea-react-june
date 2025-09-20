@@ -13,7 +13,6 @@ function App() {
     <>
       <Navbar />
       <Carousel />
-      <Toggle />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about-us" element={<About />}></Route>
