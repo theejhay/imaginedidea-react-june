@@ -24,7 +24,8 @@ Create a **reusable `Button` component** that accepts the following props:
 ```jsx
 <Button 
   text="Click Me" 
-  color="blue" 
+  bgcolor="blue"
+  color="white" 
   disabled={true}
 />
 
