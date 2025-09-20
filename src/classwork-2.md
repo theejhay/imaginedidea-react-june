@@ -25,11 +25,6 @@ Create a **reusable `Button` component** that accepts the following props:
 <Button 
   text="Click Me" 
   color="blue" 
+  disabled={true}
 />
-
-<Button 
-  label="Disabled Button" 
-  disabled={true} 
-/>
-
 
