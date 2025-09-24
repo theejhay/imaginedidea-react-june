@@ -40,6 +40,17 @@ function Navbar() {
                 Movie
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/post-list">
+              Posts
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/create">
+              Create Post
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

@@ -6,7 +6,9 @@ import Contact from "./components/pages/Contact";
 import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
 import Carousel from "./components/Carousel";
-import Toggle from "./components/Toggle";
+import PostList from "./components/PostList";
+import PostDetails from "./components/PostDetails";
+import CreatePost from "./components/CreatePost";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path="/contact-us" element={<Contact />}></Route>
         <Route path="/movie" element={<Movie />}></Route>
         <Route path="*" element={<NotFound />}></Route>
+        <Route path="/post-list" element={<PostList />}></Route>
+        <Route path="/posts/:postId" element={<PostDetails />}></Route>
+        <Route path="/create" element={<CreatePost />}></Route>
       </Routes>
     </>
   );

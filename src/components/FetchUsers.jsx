@@ -18,6 +18,7 @@ useEffect(() => {
         const res = await fetch("https://jsonplaceholder.typicode.com/users");
         const responseData = await res.json();
         setUsers(responseData);
+        console.log(responseData);
     };
 
     fetchUsers();
@@ -33,6 +34,8 @@ useEffect(() => {
           <th> Email</th>
           <th> Phone</th>
           <th> Username</th>
+          <th> Company</th>
+          <th> City</th>
         </tr>
       </thead>
 
@@ -44,6 +47,8 @@ useEffect(() => {
             <td> {user.email}</td>
             <td> {user.phone}</td>
             <td> {user.username}</td>
+            <td> {user.company.name}</td>
+            <td> {user.address.city}</td>
           </tr>
         ))}
       </tbody>
