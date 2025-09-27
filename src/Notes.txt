@@ -11,3 +11,25 @@ useEffect (() => {
     // Code to run on mount or update 
 
 }, [])
+
+
+RoadMap
+==========
+- Solution to Assignments
+- Deployment - React Class end
+- Project - collaborative project - 2 weeks
+- Grading -> Good Grade ?  Ready for Internship : Not Ready for Internship
+- Certificates presentation!
+- Internship starts 
+- Backend Starts 3 weeks after the main course ends (optional)
+- Regualr Check-ins 
+- Optimization of LinkeIn and resume 
+- Congratulations  
+- End.
+
+// SCRUM Meetings - 15 mins
+// talk about :
+    // What you did yesterday ?
+    // What you'll be doing today?
+    // Are there any blockers ?
+    

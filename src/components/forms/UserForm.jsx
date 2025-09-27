@@ -8,6 +8,9 @@ function UserForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // As a user, I want to be ensure name starts with letters only
+    // I want to ensure my name is at least 2 letters
+    // I want to make sure name contains nothing else (no numbers, no space, no symbols)
     const nameRegex = /^[A-Za-z]{2,}$/;
 
     if (!name.trim()) {
