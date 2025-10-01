@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import PostComment from "./PostComment";
 
 function PostDetails() {
-  const { postId } = useParams();
+  const { postId } = useParams();  // /1, /2, /3,/4 etc 
 
   const [post, setPost] = useState([]);
 
@@ -13,6 +14,7 @@ function PostDetails() {
     const postResponse = await response.json();
     setPost(postResponse);
   };
+
 
   useEffect(() => {
     fetchPost();
@@ -25,9 +27,13 @@ function PostDetails() {
 
   return (
     <>
-    <Link to={"/post-list"} className="btn btn-info btn-sm" style={{margin: "20px"}}>
-          Go Back
-        </Link>
+      <Link
+        to={"/post-list"}
+        className="btn btn-info btn-sm"
+        style={{ margin: "20px" }}
+      >
+        Go Back
+      </Link>
       <div className="card" style={style}>
         <div className="card-body">
           <h5 className="card-title">{post.title}</h5>
@@ -35,7 +41,7 @@ function PostDetails() {
         </div>
       </div>
 
-      <h3> Comments</h3>
+      <PostComment post={post} />
     </>
   );
 }
